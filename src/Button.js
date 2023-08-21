@@ -6,7 +6,7 @@ function Button({ children, primary, secondary, success, warning, danger, outlin
     //     throw new Error("Can't use primary and seconday prop at the same time" );
     // }
 
-  return <button>{children}</button>;
+  return <button className='text-blue-800'>{children}</button>;
 }
 
 Button.propTypes = {
