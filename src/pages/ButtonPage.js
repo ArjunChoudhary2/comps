@@ -1,11 +1,11 @@
-import Button from "./components/Button";
+import Button from "../components/Button";
 import {
   GiAbstract068,
   GiAlliedStar,
   GiArmoredBoomerang,
 } from "react-icons/gi";
 
-function App() {
+function ButtonPage() {
   return (
     <div>
       <div>
@@ -40,4 +40,4 @@ function App() {
   );
 }
 
-export default App;
+export default ButtonPage;
