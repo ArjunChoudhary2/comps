@@ -1,22 +1,40 @@
 import Button from "./Button";
+import {
+  GiAbstract068,
+  GiAlliedStar,
+  GiArmoredBoomerang,
+} from "react-icons/gi";
 
 function App() {
   return (
     <div>
       <div>
-        <Button primary >Buy Now!!</Button>
+        <Button primary className="mb-5">
+          <GiAlliedStar />
+          Buy Now!!
+        </Button>
       </div>
       <div>
-        <Button secondary>See Deals</Button>
+        <Button secondary rounded>
+          See Deals
+        </Button>
       </div>
       <div>
-        <Button success>Something</Button>
+        <Button success outline>
+          <GiArmoredBoomerang />
+          Something
+        </Button>
       </div>
       <div>
-        <Button warning >Duel</Button>
+        <Button warning rounded outline>
+          Duel
+        </Button>
       </div>
       <div>
-        <Button danger >Terminate</Button>
+        <Button danger>
+          <GiAbstract068 />
+          Terminate
+        </Button>
       </div>
     </div>
   );
