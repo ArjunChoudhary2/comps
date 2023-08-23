@@ -1,43 +1,28 @@
-import Button from "./components/Button";
-import {
-  GiAbstract068,
-  GiAlliedStar,
-  GiArmoredBoomerang,
-} from "react-icons/gi";
+import Accordion from "./components/Accordion";
 
 function App() {
-  return (
-    <div>
-      <div>
-        <Button primary className="mb-5">
-          <GiAlliedStar />
-          Buy Now!!
-        </Button>
-      </div>
-      <div>
-        <Button secondary rounded>
-          See Deals
-        </Button>
-      </div>
-      <div>
-        <Button success outline>
-          <GiArmoredBoomerang />
-          Something
-        </Button>
-      </div>
-      <div>
-        <Button warning rounded outline>
-          Duel
-        </Button>
-      </div>
-      <div>
-        <Button danger>
-          <GiAbstract068 />
-          Terminate
-        </Button>
-      </div>
-    </div>
-  );
+  const items = [
+    {
+      id: "saddsa1",
+      label: "Introduction",
+      content:
+        " Welcome to our website! We're excited to share our products and services with you.",
+    },
+    {
+      id: "sadddsdasa1",
+      label: "Our Team",
+      content:
+        "Meet our dedicated team of professionals who work tirelessly to deliver top-notch solutions to our clients.",
+    },
+    {
+      id: "ji2nee2i",
+      label: "Services Offered",
+      content:
+        "Explore a wide range of services we provide, including web design, digital marketing, and software development.",
+    },
+  ];
+
+  return <Accordion items={items} />;
 }
 
 export default App;
