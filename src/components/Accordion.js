@@ -5,17 +5,17 @@ function Accordion({ items }) {
   const [expandedIndex, setExpandedIndex] = useState(-1);
 
   const handleClick = (nextIndex) => {
-    if(expandedIndex === nextIndex)
-    setExpandedIndex(-1);
-    else
-    setExpandedIndex(nextIndex);
+    if (expandedIndex === nextIndex) setExpandedIndex(-1);
+    else setExpandedIndex(nextIndex);
   };
 
   const renderdItems = items.map((item, index) => {
     const isExpanded = index === expandedIndex;
 
     const icon = (
-      <span className="text-xl">{isExpanded ? <GoChevronDown /> : <GoChevronLeft />}</span>
+      <span className="text-xl">
+        {isExpanded ? <GoChevronDown /> : <GoChevronLeft />}
+      </span>
     );
     return (
       <div>
